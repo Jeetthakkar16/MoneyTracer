@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>MoneyTracker - Create Account</title>
+
+<link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favi.ico') }}">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+body{
+background:#f5f7fb;
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+/* card */
+
+.container{
+width:380px;
+background:white;
+padding:40px;
+border-radius:12px;
+box-shadow:0 10px 30px rgba(0,0,0,0.08);
+border:1px solid #e5e7eb;
+}
+
+/* logo / title */
+
+.logo{
+font-size:22px;
+font-weight:600;
+color:#2563eb;
+margin-bottom:30px;
+}
+
+h2{
+font-size:20px;
+margin-bottom:20px;
+color:#1f2937;
+}
+
+/* input */
+
+label{
+font-size:14px;
+color:#374151;
+}
+
+input{
+width:100%;
+padding:12px;
+margin-top:6px;
+margin-bottom:16px;
+border:1px solid #d1d5db;
+border-radius:8px;
+font-size:14px;
+transition:0.2s;
+}
+
+input:focus{
+outline:none;
+border-color:#2563eb;
+box-shadow:0 0 0 3px rgba(37,99,235,0.1);
+}
+
+/* button */
+
+button{
+width:100%;
+padding:12px;
+background:#2563eb;
+color:white;
+border:none;
+border-radius:8px;
+font-size:15px;
+font-weight:500;
+cursor:pointer;
+transition:0.2s;
+}
+
+button:hover{
+background:#1d4ed8;
+}
+
+/* link */
+
+.footer{
+margin-top:18px;
+text-align:center;
+font-size:14px;
+}
+
+.footer a{
+color:#2563eb;
+text-decoration:none;
+}
+
+.footer a:hover{
+text-decoration:underline;
+}
+
+footer{
+position:fixed;
+bottom:0;
+width:100%;
+text-align:center;
+padding:12px 0;
+font-size:13px;
+color:#6b7280;
+background:#f5f7fb;
+border-top:1px solid #e5e7eb;
+}
+
+footer span{
+font-weight:500;
+color:#1f2937;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="logo">MoneyTracker</div>
+
+<h2>Create your account</h2>
+
+<form action="/signup" method="post">
+
+<label>Username</label>
+<input type="text" name="user_name" required>
+
+<label>Password</label>
+<input type="password" name="pass_word" required>
+
+<button type="submit" name="cna">Create Account</button>
+
+</form>
+
+<div class="footer">
+Already have an account?
+<a href="/signin">Sign in</a>
+</div>
+
+</div>
+
+</div>
+
+<footer>
+© 2025 Created by <span>Jeet Thakkar</span>
+</footer>
+
+</body>
+</html>
+
+</body>
+</html>
